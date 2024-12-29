@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل اللاعبين</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>لاعبي نادي الزمالك</h1>
+    <div class="players-grid" id="playersGrid">
+        <!-- مربعات اللاعبين ستُملأ ديناميكياً عبر JavaScript -->
+    </div>
+
+    <!-- نافذة التفاصيل -->
+    <div class="modal" id="playerModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="playerName">اسم اللاعب</h2>
+            <p><strong>تاريخ بداية العقد:</strong> <span id="startDate"></span></p>
+            <p><strong>مدة العقد:</strong> <span id="duration"></span> سنوات</p>
+            <p><strong>تاريخ انتهاء العقد:</strong> <span id="endDate"></span></p>
+            <p><strong>الوقت المتبقي:</strong> <span id="remainingTime"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
